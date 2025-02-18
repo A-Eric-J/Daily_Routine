@@ -1,9 +1,8 @@
+import 'package:daily_routine/screens/home_screen.dart';
 import 'package:daily_routine/services/notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:timezone/data/latest.dart' as tz;
-
-import 'home_page.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +41,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Local Notifications'),
+      home: const HomeScreen(),
+
     );
   }
 }
